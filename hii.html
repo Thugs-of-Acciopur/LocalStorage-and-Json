@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="a2">Head Quater of Raw agent</p>
+    <p id="output"></p>
+
+    <!-- <script src="./script.js"></script> -->
+
+    <script>
+        let output = document.getElementById('output');
+        let jsonData = localStorage.getItem("information");
+        let jsData = JSON.parse(jsonData);
+        console.log(jsData.text);
+        output.innerText = jsData.text;
+    </script>
+</body>
+</html>
